@@ -104,7 +104,7 @@ def start():
     if 'face_recognition_model.pkl' not in os.listdir('static'):
         return render_template('home.html',totalreg=totalreg(),datetoday2=datetoday2,mess='There is no trained model in the static folder. Please add a new face to continue.') 
 
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(1)
     ret = True
     while ret:
         ret,frame = cap.read()
