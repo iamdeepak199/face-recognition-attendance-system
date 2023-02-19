@@ -132,7 +132,7 @@ def add():
     userimagefolder = 'static/faces/'+newusername+'_'+str(newuserid)
     if not os.path.isdir(userimagefolder):
         os.makedirs(userimagefolder)
-    cap = cv2.VideoCapture(1000000000000000000000000000000) 
+    cap = cv2.VideoCapture(1000000000000000) 
     i,j = 0,0
     while 1:
         _,frame = cap.read()
